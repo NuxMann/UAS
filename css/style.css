@@ -1,0 +1,247 @@
+/* Tinggi Navbar dan padding */
+.topbar {
+    height: 20px;
+    width:90%;
+    padding-top: 30px;
+  }
+
+  /* Ukuran font menu navbar */
+  .navbar-nav .nav-link {
+    font-size: 18px;
+    padding-top: 55px;
+  }
+
+  /* Logo navbar */
+  .navbar-brand img {
+    padding-top: 30px;
+    margin-top: 20px;
+    padding-left: 30px;
+    height: 120px;
+    width: auto; /* atur sesuai kebutuhan */
+      /* agar tidak terlalu besar */
+  }
+
+  /* Avatar profil */
+  .img-profile {
+    height: 40px;
+    width: 40px;
+    margin-bottom:10px;
+    object-fit: cover;
+  }
+
+  .banner img{
+    width: 110%;
+    height: 600px;
+    display: inline-block;
+  }
+  .searchtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  }
+  .search-bar {
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.search-bar input,
+.dropdown-toggle {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background: #fff;
+  width: 200px;
+  text-align: center;
+}
+
+.dropdown-menu-custom {
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  min-width: 280px;
+}
+
+.room-option, .guest-option {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.room-option:hover, .guest-option:hover {
+  font-weight: bold;
+  color: red;
+}
+
+.selected {
+  color: red;
+  font-weight: bold;
+}
+.search-form-container {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.dropdown-horizontal {
+    display: flex !important;           /* force horizontal layout */
+    flex-direction: row !important;
+    padding: 10px;
+    gap: 10px;
+    white-space: nowrap;
+}
+.dropdown-horizontal .dropdown-item {
+  min-width: auto;                    /* prevent stretching */
+  text-align: center;
+}
+.img-popular{
+    display: flex;
+    align-items: center;
+}
+.circle-image {
+    width: 100px;       
+    height: 100px;
+    border-radius: 50%; 
+    object-fit: cover;  
+    margin-top: 30px;
+}
+
+.text-center h4 {
+    font-size: 20px;
+}
+.card-body {
+    background-color: #D9D9D9;
+}
+.reviews {
+    display: flex;
+    gap: 20px;
+  }
+
+  .review-box {
+    width: 30%;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    text-align: center;
+  }
+
+  .review-box::before {
+    content: "❝";
+    font-size: 24px;
+    color: #333;
+    display: block;
+    padding-top: 10px;
+    margin-top: 35px;
+  }
+
+  .review-text {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-style: italic;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+  }
+  .footer {
+    background-color: #007d39;
+    color: white;
+    padding: 40px 10px 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .footer-section {
+    max-width: 280px;
+    margin-right: 100px;
+    padding-right: 100px;
+    margin-top: 20px;
+  }
+  
+  .logo-img {
+    width: 140px;
+    height: auto;
+    margin-left: 20px;
+    padding-left: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section h3,
+  .footer-section h4 {
+    margin: 2px 0;
+    font-weight: bold;
+  }
+  
+  .footer-section p {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  .nav-title {
+    display: flex;
+    color: #b0ffb0;
+    width: 100px;
+  }
+  
+  .contact-title {
+    color: #ffe066;
+  }
+  
+  .footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .footer-nav li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid white;
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .loc-footer{
+    display: flex;
+    padding-top: 10px;
+  }
+  .loc-footer span{
+    margin-top: 5px;
+  }
+  .loc-footer img {
+    width: 45px;
+    padding-right: 10px;
+  }
+  .ig-footer img {
+    width: 45px;
+    height: auto;
+    padding-right: 10px;
+  }
+  

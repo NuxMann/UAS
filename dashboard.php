@@ -28,114 +28,73 @@ $username = $_SESSION['username'];
   <title>Booking Hotel</title>
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="css/ruang-admin.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body id="page-top">
-  <div id="wrapper">
+  <div id="wrapper" >
     <!-- Sidebar -->
-    <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon">
-          <img src="img/logo/logo2.png">
-        </div>
-        <div class="sidebar-brand-text mx-3">Booking Hotel</div>
-      </a>
-      <hr class="sidebar-divider my-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
-      </li>
-      <hr class="sidebar-divider">
-      <div class="sidebar-heading">
-        Features
-      </div>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm" aria-expanded="true"
-          aria-controls="collapseForm">
-          <i class="fab fa-fw fa-wpforms"></i>
-          <span>Forms</span>
-        </a>
-        <div id="collapseForm" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Forms</h6>
-            <a class="collapse-item" href="form_basics.html">Form Basics</a>
-            <a class="collapse-item" href="form_advanceds.html">Form Advanceds</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true"
-          aria-controls="collapseTable">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span>
-        </a>
-        <div id="collapseTable" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Tables</h6>
-            <a class="collapse-item" href="simple-tables.html">Simple Tables</a>
-            <a class="collapse-item" href="datatables.html">DataTables</a>
-          </div>
-        </div>
-      </li>
-      <hr class="sidebar-divider">
-      <div class="sidebar-heading">
-        Examples
-      </div>
-      <!-- <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePage" aria-expanded="true"
-          aria-controls="collapsePage">
-          <i class="fas fa-fw fa-columns"></i>
-          <span>Pages</span>
-        </a>
-        <div id="collapsePage" class="collapse" aria-labelledby="headingPage" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Example Pages</h6>
-            <a class="collapse-item" href="login-page.php">Login</a>
-            <a class="collapse-item" href="register-page.php">Register</a>
-          </div>
-        </div>
-      </li> -->
-      <hr class="sidebar-divider">
-      <div class="version" id="version-ruangadmin"></div>
-    </ul>
+    
     <!-- Sidebar -->
-    <div id="content-wrapper" class="d-flex flex-column">
-      <div id="content">
+    <div id="content-wrapper" class="d-flex flex-column" >
+      <div id="content" >
         <!-- TopBar -->
-        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
-          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
-            <i class="fa fa-bars"></i>
-          </button>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-search fa-fw"></i>
+        <nav id="navbar" class="navbar navbar-expand navbar-light  topbar mb-4 static-top" >
+        <a class="navbar-brand" href="#">
+          <img src="img/logo/logo-web.png" width="100%" height="100%" class="d-inline-block align-top" alt="">
+        </a>
+
+        <!-- Navbar -->
+        <nav>
+         
+          <ul class="navbar-nav ml-auto ml-5">
+            
+            
+            <li class="nav-item d-flex  pr-5 ml-5 ">
+              <li class="nav-item">
+                <a class="nav-item text-success nav-link active pr-1 ml-5 " href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+              <a class="nav-item nav-link text-dark pr-1 ml-5 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Data Master
               </a>
-              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                aria-labelledby="searchDropdown">
-                <form class="navbar-search">
-                  <div class="input-group">
-                    <input type="text" class="form-control bg-light border-1 small" placeholder="What do you want to look for?"
-                      aria-label="Search" aria-describedby="basic-addon2" style="border-color: #3f51b5;">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary" type="button">
-                        <i class="fas fa-search fa-sm"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
+                <ul class="dropdown-menu pr-5 ml-5">
+                  <li><a class="dropdown-item" href="#">Hotel</a></li>
+                  <li><a class="dropdown-item" href="#">Kamar</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+              <a class="nav-item nav-link text-dark pr-1 ml-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Data Transaksi
+              </a>
+                <ul class="dropdown-menu pr-5 mr-2">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+              <a class="nav-item nav-link text-dark pr-1 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Data Laporan
+              </a>
+                <ul class="dropdown-menu pr-5">
+                  <li><a class="dropdown-item " href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
             </li>
-            <div class="topbar-divider d-none d-sm-block"></div>
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+            <li class="nav-item dropdown no-arrow ml-3 pl-5">
+              <a class="nav-link dropdown-toggle pb-2" href="#" id="userDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 <img class="img-profile rounded-circle" src="img/boy.png" style="max-width: 60px">
-                <span class="ml-2 d-none d-lg-inline text-white small">Halo, <?php echo htmlspecialchars($username); ?></span>
+                <span class="ml-2 d-none d-lg-inline text-white small text-dark">Halo, <?php echo htmlspecialchars($username); ?></span>
               </a>
+              <li class="nav-item dropdown no-arrow">
+                
+              </li>
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                 <a class="dropdown-item" href="#">
                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -158,27 +117,163 @@ $username = $_SESSION['username'];
             </li>
           </ul>
         </nav>
-        <!-- Topbar -->
-
       </div>
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>copyright &copy; <script> document.write(new Date().getFullYear()); </script> - developed by
-              <b><a href="https://indrijunanda.gitlab.io/" target="_blank">indrijunanda</a></b>
-            </span>
+      <hr class="text-dark">
+      <!-- Body -->
+       <!-- Banner -->
+      <div id="carouselExample" class="carousel crs-banner slide pb-5">
+        <div class="carousel-inner">
+          <div class="carousel-item banner active">
+            <img src="img/img-banner.jpg" alt="...">
+            <h1 class="searchtext">Find Your Hotel Here!</h1> 
+
+            <div class="search-form-container">
+              <form class="search-bar mt-4">
+                <input type="text" placeholder="Enter location">
+                <input type="text" id="checkin" placeholder="Check-in date">
+                <input type="text" id="checkout" placeholder="Check-out date">
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" id="roomGuestBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                    1 Room, 1 Guest
+                  </button>
+                  <div class="dropdown-menu mr-4 ml-2 mt-2 pr-auto " aria-labelledby="roomGuestBtn">
+                    <!-- Baris Room -->
+                    <div class="d-flex flex-row gap-2 mb-2" id="room-options">
+                      <a class="dropdown-item px-2 py-1" href="#">1 Room</a>
+                      <a class="dropdown-item px-2 py-1" href="#">2 Room</a>
+                      <a class="dropdown-item px-2 py-1" href="#">3 Room</a>
+                    </div>
+                    <!-- Baris Guest -->
+                    <div class="d-flex flex-row gap-2" id="guest-options">
+                      <a class="dropdown-item px-2 py-1" href="#">1 Guest</a>
+                      <a class="dropdown-item px-2 py-1" href="#">2 Guest</a>
+                      <a class="dropdown-item px-2 py-1" href="#">3 Guest</a>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-success">Search</button>
+              </form>
+            </div>
           </div>
         </div>
-      </footer>
-      <!-- Footer -->
+      </div>
+      <!-- Popular Hotel -->
+      <!-- Popular Hotel -->
+      <div class="popular-area pt-5 ml-5">
+        <div class="title-popular mb-3">
+          <h3 class="text-success">Popular Hotel Area</h3>
+        </div>
+
+        <div class="d-flex gap-5 mr-4">
+          <!-- Item 1 -->
+          <div class="text-center mr-4">
+            <img src="img/tangerang.jpg" alt="Gambar Lingkaran" class="circle-image mb-2">
+            <h4 class="mb-0">Tangerang</h4>
+          </div>
+          <!-- Item 2 -->
+          <div class="text-center mr-4">
+            <img src="img/jakarta-2.jpg" alt="Gambar Lingkaran" class="circle-image mb-2">
+            <h4 class="mb-0">Jakarta</h4>
+          </div>
+          <!-- Item 3 -->
+          <div class="text-center mr-4">
+            <img src="img/bandung.jpg" alt="Gambar Lingkaran" class="circle-image mb-2">
+            <h4 class="mb-0">Bandung</h4>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Hotel Recomendation -->
+      <div class="hotelrecom-area pt-5 ml-5">
+        <div class="title-recom">
+          <h3 class="text-success">Hotel Recomendation</h3>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 mb-3 mb-sm-0">
+            <div class="card d-flex flex-column pt-5" style="width: 18rem; height: 100%;">
+              <img src="img/novotel-hotel.avif" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title" style="color:#198754; font-weight: bold;">Novotel Tangerang</h5>
+                  <p class="card-city" style="color:#105B38;">Tangerang</p>
+                  <p class="card-text" style="color:#198754;">Starts From php harga/night</p>
+                </div>
+                <a href="#" class="btn btn-primary mt-3">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 mb-3 mb-sm-0">
+            <div class="card d-flex flex-column pt-5" style="width: 20rem; height: 100%;">
+              <img src="img/narita-hotel.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title" style="color:#198754; font-weight: bold;">Narita Hotel</h5>
+                  <p class="card-city" style="color:#105B38;">Tangerang</p>
+                  <p class="card-text" style="color:#198754;">Starts From php harga/night</p>
+                </div>
+                <a href="#" class="btn btn-primary mt-3">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><br>
+      <!-- Customer Review -->
+      <div class="cusreview-area pt-5 ml-5">
+        <div class="title-custrev">
+          <h3 class="text-success">Customer Reviews</h3>
+        </div>
+      </div>
+      <div class="reviews ml-5 pt-4">
+        <div class="review-box">
+          <div class="review-text">Hotel bagus dan nyaman..</div>
+        </div>
+        <div class="review-box">
+          <div class="review-text">Terbaikkk</div>
+        </div>
+      </div>
     </div>
   </div>
+  <footer class="footer mt-5">
+    <div class="footer-container">
 
-  <!-- Scroll to top -->
-  <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
+      <!-- Logo dan Deskripsi -->
+       <div class="logo-sec">
+        <img src="img/logo/logo-footer.png" alt="NuRy Hotel Logo" class="logo-img">
+       </div>
+      <div class="footer-section">
+        <h3>The Best......</h3>
+        <h4>GOGreen Hotel</h4>
+        <p>PT. Indonesia Semesta Hijau</p>
+      </div>
+
+      <!-- Navigation -->
+      <div class="footer-section">
+        <h4 class="nav-title">NuRy Navigation</h4>
+        <ul class="footer-nav">
+          <li><a href="#navbar">Home</a></li>
+          <li><a href="#">Hotel</a></li>
+          <li><a href="#carouselExample">Search</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-section">
+        <h4 class="contact-title">Our Contact</h4>
+        <i class="loc-footer"><img src="img/location.png" alt="" srcset=""><span>Tangerang,Indonesia</span></i>
+        <i class="loc-footer"><img src="img/instagram.png" alt="" srcset=""><span>NuRy Hotel</span></i>
+      </div>
+      
+    </div>
+
+    <div class="footer-bottom">
+      <p>©2025 NuRy Hotel.com</p>
+    </div>
+  </footer>
+
+
+  
 
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -186,6 +281,44 @@ $username = $_SESSION['username'];
   <script src="js/ruang-admin.min.js"></script>
   <script src="vendor/chart.js/Chart.min.js"></script>
   <script src="js/demo/chart-area-demo.js"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    flatpickr("#checkin", { dateFormat: "Y-m-d" });
+    flatpickr("#checkout", { dateFormat: "Y-m-d" });
+
+    function selectRoomGuest(room, guest) {
+      document.getElementById('roomGuestBtn').innerText = `${room} Room, ${guest} Guest`;
+    }
+
+    let selectedRoom = "1 Room";
+    let selectedGuest = "1 Guest";
+
+    const btn = document.getElementById("roomGuestBtn");
+
+    // Update text function
+    function updateButton() {
+      btn.innerText = `${selectedRoom}, ${selectedGuest}`;
+    }
+
+    // Room options
+    document.querySelectorAll("#room-options a").forEach(el => {
+      el.addEventListener("click", (e) => {
+        e.preventDefault();
+        selectedRoom = el.innerText;
+        updateButton();
+      });
+    });
+
+    // Guest options
+    document.querySelectorAll("#guest-options a").forEach(el => {
+      el.addEventListener("click", (e) => {
+        e.preventDefault();
+        selectedGuest = el.innerText;
+        updateButton();
+      });
+    });
+  </script>
 </body>
 
 </html>
