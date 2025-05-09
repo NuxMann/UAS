@@ -13,7 +13,7 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" href="css/style3.css">
 </head>
 
 <body id="page-top">
